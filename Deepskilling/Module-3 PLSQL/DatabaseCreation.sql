@@ -1,0 +1,3 @@
+CREATE DATABASE BankDB;
+USE BankDB;
+

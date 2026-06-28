@@ -1,0 +1,17 @@
+DELIMITER //
+
+CREATE FUNCTION CalculateAge(
+    dob DATE
+)
+RETURNS INT
+DETERMINISTIC
+
+BEGIN
+    DECLARE age INT;
+    SET age = TIMESTAMPDIFF(YEAR, dob, CURDATE());
+    RETURN age;
+END //
+
+DELIMITER ;
+
+SELECT CalculateAge('1990-07-20') AS Age;
