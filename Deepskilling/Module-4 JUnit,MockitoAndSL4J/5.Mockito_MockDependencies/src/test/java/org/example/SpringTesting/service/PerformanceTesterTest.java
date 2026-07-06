@@ -1,0 +1,15 @@
+package org.example.SpringTesting.service;
+
+import org.junit.jupiter.api.Test;
+import java.time.Duration;
+import static org.junit.jupiter.api.Assertions.assertTimeout;
+
+public class PerformanceTesterTest {
+
+    PerformanceTester obj = new PerformanceTester();
+
+    @Test
+    void testPerformance(){
+        assertTimeout(Duration.ofSeconds(1), ()->obj.process());
+    }
+}

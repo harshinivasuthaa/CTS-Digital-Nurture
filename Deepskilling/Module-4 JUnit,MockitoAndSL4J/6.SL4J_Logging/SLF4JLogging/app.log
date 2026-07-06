@@ -1,0 +1,4 @@
+00:51:42 DEBUG org.example.AppenderExample - Debug Message
+00:51:42 INFO  org.example.AppenderExample - Information Message
+00:51:42 WARN  org.example.AppenderExample - Warning Message
+00:51:42 ERROR org.example.AppenderExample - Error Message
